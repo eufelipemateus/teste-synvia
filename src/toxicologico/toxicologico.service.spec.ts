@@ -34,7 +34,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(false);
+    expect(service.intoxicado(laudoDto)).toBeFalsy();
   });
 
   test('Teste Cocaina Positivo', () => {
@@ -54,7 +54,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0.05,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste Anfetamina Positivo', () => {
@@ -74,7 +74,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste Metanfetamina Positivo', () => {
@@ -94,7 +94,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste MDA Positivo', () => {
@@ -114,7 +114,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste MDMA Positivo', () => {
@@ -134,7 +134,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste THC Positivo', () => {
@@ -154,7 +154,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste Morfina Positivo', () => {
@@ -174,7 +174,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste Codeína Positivo', () => {
@@ -194,7 +194,7 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 
   test('Teste Heroína Positivo', () => {
@@ -214,6 +214,6 @@ describe('ToxicologicoService', () => {
       Norcocaína: 0,
     };
 
-    expect(service.intoxicado(laudoDto)).toBe(true);
+    expect(service.intoxicado(laudoDto)).toBeTruthy();
   });
 });

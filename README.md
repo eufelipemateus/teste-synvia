@@ -17,12 +17,17 @@ yarn install
 ## Rotas Backend
 
 - POST /toxicologico - Retornar resultado do teste **positvo** ou **negativo**
+- POST /auth/login - authenticar usuario
 
 ## Executando
 
 ```bash
 yarn start
 ```
+
+## Observações
+
+Não foi usado banco de dados nesse teste tecniclo o usario de login é admin e senha é admin.  Para retorna o valor da rota autenticdo precidar passar o bearer token.
 
 ## Autor
 
